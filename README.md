@@ -58,10 +58,8 @@ The dataset includes:
 ## 🔄 Future Updates
 
 We will be uploading:
-- The official **DTSNN training and evaluation code**
 - **More training data** in phases
-
-Stay tuned by **watching** this repository.
+- The official **DTSNN Pretrain model and relevant code**
 
 ## 📜 Citation
 
