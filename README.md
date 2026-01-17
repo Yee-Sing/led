@@ -2,13 +2,36 @@
 
 # LED: A Large-Scale Real-World Paired Dataset for Event Camera Denoising
 
-This is official repository for the CVPR 2024 paper: **"LED: A Large-Scale Real-World Paired Dataset for Event Camera Denoising"**.
+Hi everyone！This is official repository for the CVPR 2024 paper: **"LED: A Large-Scale Real-World Paired Dataset for Event Camera Denoising"**.
 
-> **Note**: Due to a hard drive failure on our original data server, we have spent significant effort re-organizing the data. We are now releasing the **LED_Test** dataset to facilitate performance benchmarking.
+> **Note**: We apologize for the delay in release. Due to a hard drive failure on our original data server, we have spent significant effort re-organizing the data. We are now releasing the **LED_Test** dataset to facilitate performance benchmarking.
 
 ## 🗂️ Download the Dataset
 
-We are releasing the **LED_Test** dataset for evaluation. It contains **66 sequences**. Each slice `.npy` file (format: `4 x n`; rows: `x, y, p, t`) represents an event stream spanning **10 ms**.
+We are releasing the **LED_Test** dataset for your event denoising method evaluation. It contains **66 sequences**. Each slice `.npy` file (format: `4 x n`; rows: `x, y, p, t`) represents an event stream spanning **10 ms**.
+
+### Visual Comparison
+<p align="center">
+  <table align="center">
+    <tr>
+      <td align="center"><strong>Raw Events</strong></td>
+      <td align="center"><strong>Denoised Events</strong></td>
+      <td align="center"><strong>Noise Events</strong></td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="./assets/raw_events.gif" alt="Raw Events" width="280"/>
+      </td>
+      <td align="center">
+        <img src="./assets/denoised_events.gif" alt="Denoised Events" width="280"/>
+      </td>
+      <td align="center">
+        <img src="./assets/noise_events.gif" alt="Noise Events" width="280"/>
+      </td>
+    </tr>
+  </table>
+</p>
+
 
 The dataset includes:
 - **Raw event streams**
@@ -28,9 +51,9 @@ The dataset includes:
     # Data format: 4 rows x n columns
     # Row 0: x (pixel coordinate, integer)
     # Row 1: y (pixel coordinate, integer)
-    # Row 2: p (polarity, integer, typically 1 or -1)
-    # Row 3: t (timestamp, floating-point, in seconds)
-    events = np.load('path/to/your_slice.npy')
+    # Row 2: p (polarity, integer, typically 1(on event) or 0(off event))
+    # Row 3: t (timestamp, integer, in microsecond)
+    events = np.load('path/to/xxxxx.npy')
     ```
 
 ## 🔄 Future Updates
