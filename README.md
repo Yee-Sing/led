@@ -20,13 +20,13 @@ We are releasing the **LED_Test** dataset for your event denoising method evalua
     </tr>
     <tr>
       <td align="center">
-        <img src="https://raw.githubusercontent.com/Yee-Sing/led/main/assets/raw.gif" alt="Raw Events" width="280"/>
+        <img src="https://raw.githubusercontent.com/Yee-Sing/led/main/assets/raw.gif" alt="Raw Events" width="270"/>
       </td>
       <td align="center">
-        <img src="https://raw.githubusercontent.com/Yee-Sing/led/main/assets/denoised.gif" alt="Denoised Events" width="280"/>
+        <img src="https://raw.githubusercontent.com/Yee-Sing/led/main/assets/denoised.gif" alt="Denoised Events" width="270"/>
       </td>
       <td align="center">
-        <img src="https://raw.githubusercontent.com/Yee-Sing/led/main/assets/noise.gif" alt="Noise Events" width="280"/>
+        <img src="https://raw.githubusercontent.com/Yee-Sing/led/main/assets/noise.gif" alt="Noise Events" width="270"/>
       </td>
     </tr>
   </table>
@@ -37,7 +37,7 @@ The dataset includes:
 - **Denoised GT reference event streams**
 - **Separated noise event streams**
 
-**Download link:** [Baidu Netdisk (百度网盘)](https://pan.baidu.com/s/1Z7OU7HFcji7bwRZFLLU6bg?pwd=3s14)
+**Download link:** [Baidu Netdisk](https://pan.baidu.com/s/1Z7OU7HFcji7bwRZFLLU6bg?pwd=3s14)
 **Extraction code:** `3s14`
 
 ## 🚀 Usage
