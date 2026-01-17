@@ -1,0 +1,55 @@
+# led
+
+# LED: A Large-Scale Real-World Paired Dataset for Event Camera Denoising
+
+This is official repository for the CVPR 2024 paper: **"LED: A Large-Scale Real-World Paired Dataset for Event Camera Denoising"**.
+
+> **Note**: Due to a hard drive failure on our original data server, we have spent significant effort re-organizing the data. We are now releasing the **LED_Test** dataset to facilitate performance benchmarking.
+
+## 🗂️ Download the Dataset
+
+We are releasing the **LED_Test** dataset for evaluation. It contains **66 sequences**. Each slice `.npy` file (format: `4 x n`; rows: `x, y, p, t`) represents an event stream spanning **10 ms**.
+
+The dataset includes:
+- **Raw event streams**
+- **Denoised GT reference event streams**
+- **Separated noise event streams**
+
+**Download link:** [Baidu Netdisk (百度网盘)](https://pan.baidu.com/s/1Z7OU7HFcji7bwRZFLLU6bg?pwd=3s14)
+**Extraction code:** `3s14`
+
+## 🚀 Usage
+
+1.  Download and extract the `LED_Test` dataset using the link above.
+2.  Each `.npy` file can be loaded as follows (example using NumPy):
+    ```python
+    import numpy as np
+    # Load an event slice
+    # Data format: 4 rows x n columns
+    # Row 0: x (pixel coordinate, integer)
+    # Row 1: y (pixel coordinate, integer)
+    # Row 2: p (polarity, integer, typically 1 or -1)
+    # Row 3: t (timestamp, floating-point, in seconds)
+    events = np.load('path/to/your_slice.npy')
+    ```
+
+## 🔄 Future Updates
+
+We will be uploading:
+- The official **DTSNN training and evaluation code**
+- **More training data** in phases
+
+Stay tuned by **watching** this repository.
+
+## 📜 Citation
+
+If you find our work useful for your research, please consider citing:
+
+```bibtex
+@inproceedings{duan2024led,
+  title={LED: A Large-Scale Real-World Paired Dataset for Event Camera Denoising},
+  author={Duan, Yuxing},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  pages={25637--25647},
+  year={2024}
+}
