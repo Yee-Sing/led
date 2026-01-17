@@ -10,7 +10,7 @@ Hi everyone！This is official repository for the CVPR 2024 paper: **"LED: A Lar
 
 We are releasing the **LED_Test** dataset for your event denoising method evaluation. It contains **66 sequences**. Each slice `.npy` file (format: `4 x n`; rows: `x, y, p, t`) represents an event stream spanning **10 ms**.
 
-### Visual Comparison
+### The Reference GT Visual Illustration
 <p align="center">
   <table align="center">
     <tr>
