@@ -20,13 +20,13 @@ We are releasing the **LED_Test** dataset for your event denoising method evalua
     </tr>
     <tr>
       <td align="center">
-        <img src="./assets/raw.gif" alt="Raw Events" width="280"/>
+        <img src="https://raw.githubusercontent.com/Yee-Sing/led/main/assets/raw.gif" alt="Raw Events" width="280"/>
       </td>
       <td align="center">
-        <img src="https://github.com/Yee-Sing/led/blob/main/assets/denoised.gif" alt="Denoised Events" width="280"/>
+        <img src="https://raw.githubusercontent.com/Yee-Sing/led/main/assets/denoised.gif" alt="Denoised Events" width="280"/>
       </td>
       <td align="center">
-        <img src="./assets/noise.gif" alt="Noise Events" width="280"/>
+        <img src="https://raw.githubusercontent.com/Yee-Sing/led/main/assets/noise.gif" alt="Noise Events" width="280"/>
       </td>
     </tr>
   </table>
