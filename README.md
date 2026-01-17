@@ -32,7 +32,6 @@ We are releasing the **LED_Test** dataset for your event denoising method evalua
   </table>
 </p>
 
-
 The dataset includes:
 - **Raw event streams**
 - **Denoised GT reference event streams**
