@@ -29,6 +29,12 @@ We are releasing the **LED_Test** dataset for your event denoising method evalua
         <img src="https://raw.githubusercontent.com/Yee-Sing/led/main/assets/noise.gif" alt="Noise Events" width="250"/>
       </td>
     </tr>
+    <!-- 新增加的一行：跨列的描述单元格 -->
+    <tr>
+      <td colspan="3" align="center" style="padding-top: 15px; font-style: italic;">
+        The nighttime driving scenario
+      </td>
+    </tr>
   </table>
 </p>
 
