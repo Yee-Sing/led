@@ -67,6 +67,9 @@ We will be uploading:
 - **More training data** in phases
 - The official **DTSNN Pretrain model and relevant code**
 
+## Acknowledgement
+We would also like to extend our special thanks to other collaborators (Shihan Peng, Hanyu Zhou, Haoyue Liu, Lin Zhu, Wei Zhang, Yi Chang*, Sheng Zhong, Luxin Yan) for their valuable support of this work.
+
 ## 📜 Citation
 
 If you find our work useful for your research, please consider citing:
