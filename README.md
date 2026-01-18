@@ -2,13 +2,13 @@
 
 # LED: A Large-Scale Real-World Paired Dataset for Event Camera Denoising
 
-Hi everyone！This is official repository for the CVPR 2024 paper: **"LED: A Large-Scale Real-World Paired Dataset for Event Camera Denoising"**.
+Hi everyone！This is the official repository for the CVPR 2024 paper: **"LED: A Large-Scale Real-World Paired Dataset for Event Camera Denoising"**.
 
-> **Note**: We apologize for the delay in release. Due to a hard drive failure on our original data server, we have spent significant effort re-organizing the data. We are now releasing the **LED_Test** dataset to facilitate performance benchmarking.
+> **Note**: We apologize for the delay in release. Due to a hard drive failure on our original data server, we have spent significant effort re-organizing the data. We are now releasing the **LED** dataset to facilitate performance benchmarking.
 
 ## 🗂️ Download the Dataset
 
-We are releasing the **LED_Test** dataset for your event denoising method evaluation. It contains **66 sequences**. Each slice `.npy` file (format: `4 x n`; rows: `x, y, p, t`) represents an event stream spanning **10 ms**.
+We are releasing the **LED** dataset for your event denoising method training and evaluation. It contains 600 sequences and 66 sequences in the training/testing part, respectively. Each slice `.npy` file (format: `4 x n`; rows: `x, y, p, t`) represents an event stream spanning **10 ms**.
 
 ### The Reference GT Visual Illustration
 <p align="center">
