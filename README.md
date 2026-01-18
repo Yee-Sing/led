@@ -41,7 +41,7 @@ We are releasing the **LED** dataset for your event denoising method training an
 The dataset includes:
 - **Raw event streams**
 - **Denoised GT reference event streams**
-- **Separated noise event streams**
+- **Separated noise reference event streams**
 
 **Download link:** [Baidu Netdisk](https://pan.baidu.com/s/1Z7OU7HFcji7bwRZFLLU6bg?pwd=3s14)
 **Extraction code:** `3s14`
