@@ -43,7 +43,7 @@ The dataset includes:
 - **Denoised GT reference event streams**
 - **Separated noise reference event streams**
 
-**Download link:** [Baidu Netdisk](https://pan.baidu.com/s/1ldFgt089GsgLIJh3I57wsQ)
+**Download link:** [LED Dataset](https://pan.baidu.com/s/1ldFgt089GsgLIJh3I57wsQ)
 **Extraction code:** `xwng`
 
 ## 🚀 Usage
@@ -62,7 +62,7 @@ The dataset includes:
     ```
 
 ## ⚙️ Download the Pretrained Model
-Our pretrained DTSNN model can be downloaded at [Baidu Netdisk](https://pan.baidu.com/s/1W9gDwb7E50aPkfnKp2c-iQ) with the extraction code"5wt7", which is fully implemented on the **Spikingjelly** SNN platform. So, the necessary environment implementation can refer to the guidance from **[Spikingkelly](https://github.com/fangwei123456/spikingjelly)**.
+Our pretrained DTSNN model can be downloaded at [DTSNN](https://pan.baidu.com/s/1W9gDwb7E50aPkfnKp2c-iQ) with the extraction code"5wt7", which is fully implemented on the **Spikingjelly** SNN platform. So, the necessary environment implementation can refer to the guidance from **[Spikingkelly](https://github.com/fangwei123456/spikingjelly)**.
 
 ## 🔄 Future Updates
 
