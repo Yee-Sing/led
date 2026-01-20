@@ -1,5 +1,3 @@
-# led
-
 # LED: A Large-Scale Real-World Paired Dataset for Event Camera Denoising
 
 Hi everyone！This is the official repository for the CVPR 2024 paper: **"LED: A Large-Scale Real-World Paired Dataset for Event Camera Denoising"**.
