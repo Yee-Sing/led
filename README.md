@@ -44,7 +44,7 @@ The dataset includes:
 - **Separated noise reference event streams**
 
 **Download link:** [LED Dataset](https://pan.baidu.com/s/1ldFgt089GsgLIJh3I57wsQ)
-**Extraction code:** `xwng`
+with **Extraction code:** `xwng`
 
 ## 🚀 Usage
 
