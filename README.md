@@ -61,6 +61,9 @@ The dataset includes:
     events = np.load('path/to/xxxxx.npy')
     ```
 
+## ⚙️ Download the Pretrained Model
+Our pretrained DTSNN model can be downloaded at [Baidu Netdisk](https://pan.baidu.com/s/1W9gDwb7E50aPkfnKp2c-iQ) with the extraction code"5wt7", which is fully implemented on the **Spikingjelly** SNN platform. So, the necessary environment implementation can refer to the guidance from **[Spikingkelly](https://github.com/fangwei123456/spikingjelly)**.
+
 ## 🔄 Future Updates
 
 We will be uploading:
