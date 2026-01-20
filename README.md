@@ -6,7 +6,7 @@ Hi everyone！This is the official repository for the CVPR 2024 paper: **"LED: A
 
 ## 🗂️ Download the Dataset
 
-We are releasing the **LED** dataset for your event denoising method training and evaluation.  It contains 600 sequences and 66 sequences in the training/testing part, respectively. Each slice `.npy` file (format: `4 x n`; rows: `x, y, p, t`) represents an event stream spanning **10 ms**.
+We are releasing the **LED** dataset for your event denoising method training and evaluation. It contains 600 sequences and 66 sequences in the training/testing part, respectively. Each slice `.npy` file (format: `4 x n`; rows: `x, y, p, t`) represents an event stream spanning **10 ms**.
 
 ### The Reference GT Visual Illustration
 <p align="center">
@@ -60,8 +60,8 @@ Our pretrained DTSNN model can be downloaded at [DTSNN](https://pan.baidu.com/s/
 ## 🚀 Code Usage
 1.  Download and extract the `DTSNN` pretrained model using the link above.
 2.  Place the pretrained model in the "./model_zoo/pretrain/SW" directory.
-4.  Place the dataset to be tested under the "./data" directory and organize the files according to the corresponding folder hierarchy. Notably, for the convenience of metric calculation, please organize the gt reference into H×W×2 format and place it in the corresponding label directory.
-5.  Run the main_tester.py, and the predicted results will be in the "./results" directory.
+4.  Place the dataset to be tested under the "./data" directory and organize the files according to the corresponding folder hierarchy. For the convenience of metric calculation, please organize the GT reference into H×W×2 format and place it in the corresponding label directory. Notably, if there is no GT reference in your dataset, just replace it with an equal-sized zero matrix. 
+6.  Run the main_tester.py, and the predicted results will be in the "./results" directory.
 
 ## 🔄 Future Updates
 We will be uploading:
