@@ -1,0 +1,1 @@
+The pretrained DTSNN model is placed at "https://pan.baidu.com/s/1W9gDwb7E50aPkfnKp2c-iQ" with extraction code: 5wt7
