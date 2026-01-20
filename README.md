@@ -46,26 +46,26 @@ The dataset includes:
 **Download link:** [LED Dataset](https://pan.baidu.com/s/1ldFgt089GsgLIJh3I57wsQ)
 with **Extraction code:** `xwng`
 
-## 🚀 Usage
-
-1.  Download and extract the `LED_Test` dataset using the link above.
+## 🚀 Dataset Usage
+1.  Download and extract the `LED` dataset using the link above.
 2.  Each `.npy` file can be loaded as follows (example using NumPy):
     ```python
     import numpy as np
     # Load an event slice
-    # Data format: 4 rows x n columns
-    # Row 0: x (pixel coordinate, integer)
-    # Row 1: y (pixel coordinate, integer)
-    # Row 2: p (polarity, integer, typically 1(on event) or 0(off event))
-    # Row 3: t (timestamp, integer, in microsecond)
+    # Data format: 4 rows x n columns(x-integer; y-integer; p-integer; t-integer)
     events = np.load('path/to/xxxxx.npy')
     ```
 
 ## ⚙️ Download the Pretrained Model
 Our pretrained DTSNN model can be downloaded at [DTSNN](https://pan.baidu.com/s/1W9gDwb7E50aPkfnKp2c-iQ) with the extraction code"5wt7", which is fully implemented on the **Spikingjelly** SNN platform. So, the necessary environment implementation can refer to the guidance from **[Spikingkelly](https://github.com/fangwei123456/spikingjelly)**.
 
-## 🔄 Future Updates
+## 🚀 Code Usage
+1.  Download and extract the `DTSNN` pretrained model using the link above.
+2.  Place the pretrained model in the "./model_zoo/pretrain/SW" directory.
+3.  Place the dataset to be tested under the "./data" directory and organize the files according to the corresponding folder hierarchy.
+4.  Run the main_tester.py, and the predicted results will be in the "./results" directory.
 
+## 🔄 Future Updates
 We will be uploading:
 - The official **DTSNN training code**
 
