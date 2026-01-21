@@ -9,13 +9,13 @@ import numpy as np
 import torch.nn as nn
 import torch.nn.functional as F
 import matplotlib.pyplot as plt
-from neurons.spiking_neuron import *
+from model_zoo.neurons.spiking_neuron import *
 from torch.nn.utils.rnn import pad_sequence
 from matplotlib.colors import ListedColormap
 from torch.cuda.amp import autocast as autocast
 from torch.utils.data import Dataset, DataLoader
 from torch.utils.tensorboard import SummaryWriter
-from model.snn_network import EDSNN_LIF_ADAPTIVE_final, PAEVSNN_LIF_AMPLIF_final
+from model_zoo.model.snn_network import EDSNN_LIF_ADAPTIVE_final, PAEVSNN_LIF_AMPLIF_final
 from spikingjelly.activation_based import neuron, functional, surrogate, layer
 
 torch.backends.cudnn.benchmark = True
@@ -73,7 +73,7 @@ def preprocess_data(data, If_label_ts=False):
 def preprocess_data_2(data):
     original_input = data
     original_tensor = torch.from_numpy(original_input.astype(np.float32))
-    # 仍用无极性0、1脉冲量表征事件
+
     data[data != 0] = 1
     image_tensor = torch.from_numpy(data.astype(np.float32))
     
@@ -152,7 +152,6 @@ class Training_Dataset(Dataset):
             label_sequence.append(label)
             label_ts_sequence.append(label_ts)
 
-        # 将图像序列和标签序列转换为张量，并在第0维度堆叠
         image_sequence = torch.stack(image_sequence)
         label_sequence = torch.stack(label_sequence)
         label_ts_sequence = torch.stack(label_ts_sequence)
@@ -232,7 +231,6 @@ class Validation_Dataset(Dataset):
             label_ts_sequence.append(label_ts)
             origin_input_sequence.append(origin_input)
             
-        # 将图像序列和标签序列转换为张量，并在第0维度堆叠
         image_sequence = torch.stack(image_sequence)
         label_sequence = torch.stack(label_sequence)
         label_ts_sequence = torch.stack(label_ts_sequence)
