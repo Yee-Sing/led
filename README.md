@@ -60,12 +60,9 @@ Our pretrained DTSNN model can be downloaded at [DTSNN](https://pan.baidu.com/s/
 ## 🚀 Code Usage
 1.  Download and extract the `DTSNN` pretrained model using the link above.
 2.  Place the pretrained model in the "./model_zoo/pretrain/SW" directory.
-4.  Place the dataset to be tested under the "./data" directory and organize the files according to the corresponding folder hierarchy. For the convenience of metric calculation, please organize the GT reference into H×W×2 format and place it in the corresponding label directory. Notably, if there is no GT reference in your dataset, just replace it with an equal-sized zero matrix. 
-6.  Run the main_tester.py, and the predicted results will be in the "./results" directory.
-
-## 🔄 Future Updates
-We will be uploading:
-- The official **DTSNN training code**
+3.  Place the dataset to be tested under the "./data" directory and organize the files according to the corresponding folder hierarchy. For the convenience of metric calculation, please organize the GT reference into H×W×2 format and place it in the corresponding label directory. Notably, if there is no GT reference in your dataset, just replace it with an equal-sized zero matrix. 
+4.  Run the main_tester.py, and the predicted results will be in the "./results" directory.
+5.  If you need to retrain the model, replace the line 400 by your dataset directory in DTSNN_trainer.py.
 
 ## Acknowledgement
 We would also like to extend our special thanks to other collaborators (Shihan Peng, Hanyu Zhou, Haoyue Liu, Lin Zhu, Wei Zhang, Yi Chang*, Sheng Zhong, Luxin Yan) for their valuable support of this work.
